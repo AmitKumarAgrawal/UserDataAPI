@@ -1,4 +1,5 @@
 
+Note:- We can make use of PostMan tool to execute below request.
 
 ------------------------------------------------------------------------------
 --GET REQUEST
