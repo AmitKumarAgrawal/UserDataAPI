@@ -9,41 +9,6 @@ package com.project.user.constants;
 public class UserDataConstants {
 
 	/**
-	 * database connection url part
-	 */
-	public static final String DATABASE_CONNECTION_URL_STARTING_PART = "jdbc:mysql://";
-
-	/**
-	 * database driver class name
-	 */
-	public static final String DATABASE_DRIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
-
-	/**
-	 * database host address
-	 */
-	public static final String MYSQL_DATABASE_HOST_ADDRESS = "localhost";
-
-	/**
-	 * database port number
-	 */
-	public static final String MYSQL_DATABASE_PORT_NUMBER = "3306";
-
-	/**
-	 * database name
-	 */
-	public static final String MYSQL_DATABASE_NAME = "project_db";
-
-	/**
-	 * database user name
-	 */
-	public static final String MYSQL_DATABASE_USER_NAME = "amit";
-
-	/**
-	 * database password
-	 */
-	public static final String MYSQL_DATABASE_PASSWORD = "password1";
-	
-	/**
 	 * insert query for USER table
 	 */
 	public static final String INSERT_QUERY_FOR_USER_TABLE = " insert into user (email, username, password)" + " values (?, ?, ?)";
