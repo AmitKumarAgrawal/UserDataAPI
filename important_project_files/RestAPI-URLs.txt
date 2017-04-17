@@ -18,7 +18,15 @@ http://localhost:8080/UserDataAPI/rest/UserDataRestService/getusers
 ------------------------------------------------------------------------------
 
 //create a new user
-http://localhost:8080/UserDataAPI/rest/UserDataRestService/adduser/user5@test.com/testUser5/testPass5
+
+http://localhost:8080/UserDataAPI/rest/UserDataRestService/adduser
+
+<user>
+	<emailId>testUser5@test.com</emailId>
+	<password>testPass5</password>
+	<userName>testUser5</userName>
+</user>
+
 
 ------------------------------------------------------------------------------
 
