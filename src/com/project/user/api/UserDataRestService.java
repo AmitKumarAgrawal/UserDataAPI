@@ -134,7 +134,7 @@ public class UserDataRestService {
 	 * creates a new user in the database by using the provided inputs in the Path parameter
 	 */
 	@POST
-	@Path("/adduser/{email}/{username}/{password}")
+	@Path("/adduser1/{email}/{username}/{password}")
 	@Produces("text/plain")
 	@Consumes("text/plain") 
 	public void addUser(@PathParam("email") String email, @PathParam("username") String username, @PathParam("password") String password) throws SQLException{
@@ -145,31 +145,26 @@ public class UserDataRestService {
 	}
 	
 	/**
-	 * @param email
-	 * @param username
-	 * @param password
-	 * @throws SQLException
+	 * @param user
+	 * @throws Exception
 	 * 
-	 *  creates a new user in the database by using the provided JSON object
-	 *  
-	 *  todo
-	 *  	need to finish this. this is causing some issues
+	 * 	 creates a new user in the database by using the provided xml object
 	 */
 	@POST
-	@Path("/adduser1")
+	@Path("/adduser")
 	@Produces("text/plain")
-	@Consumes("text/plain") 
-	public void addUser1(JSONObject inputJsonObj) throws Exception {
+	@Consumes(MediaType.APPLICATION_XML) 
+	public void addUser(User user) throws Exception {
 
-	    String email = (String) inputJsonObj.get("email");
-	    String username = (String) inputJsonObj.get("username");
-	    String password = (String) inputJsonObj.get("password");
+	    String email = (String) user.getEmailId();
+	    String username = (String) user.getUserName();
+	    String password = (String) user.getPassword();
 	    
 		System.out.println("email ::: " + email + " username :: " + username + " password :: " + password);
 		
 		UserDAO userDao = new UserDAO();
-		//userDao.addUser(email, username, password);
+		userDao.addUser(email, username, password);
 	}
-	
+
 
 }
