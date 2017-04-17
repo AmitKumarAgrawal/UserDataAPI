@@ -1,0 +1,39 @@
+
+
+------------------------------------------------------------------------------
+--GET REQUEST
+------------------------------------------------------------------------------
+//retrieve all hobbies for the user
+http://localhost:8080/UserDataAPI/rest/UserDataRestService/getuserhobbies/1
+
+
+//retrieve all the users from the database
+http://localhost:8080/UserDataAPI/rest/UserDataRestService/getusers
+
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+--POST REQUEST
+------------------------------------------------------------------------------
+
+//create a new user
+http://localhost:8080/UserDataAPI/rest/UserDataRestService/adduser/user5@test.com/testUser5/testPass5
+
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+--DELETE REQUEST
+------------------------------------------------------------------------------
+//delete specific phonenumber for provided user
+http://localhost:8080/UserDataAPI/rest/UserDataRestService/deletephonenumber/1/office
+
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+--PUT REQUEST
+------------------------------------------------------------------------------
+
+//updated specific phonenumber for the provided user with the provided phonenumber
+http://localhost:8080/UserDataAPI/rest/UserDataRestService/updatephonenumber/2/office/5555555555
+
+------------------------------------------------------------------------------
